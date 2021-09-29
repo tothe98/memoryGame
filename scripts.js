@@ -75,6 +75,7 @@ function reset() {
         card.classList.remove('flip');
         card.addEventListener('click', flipCard)
     });
+    myStopFunction();
     hasFlippedCard = false;
     lockBoard = false;
     firstCard = null;
@@ -83,6 +84,7 @@ function reset() {
     scoreCounter = 0;
     counterElement.innerHTML = counter;
     shuffle();
+    startTimer();
 }
 
 function shuffle() {
@@ -104,7 +106,7 @@ function start() {
     scoreCounter = 0;
     shuffle();
     box.style.display = "none";
-    myInterval();
+    startTimer();
 }
 
 function restart() {
@@ -122,19 +124,22 @@ function restart() {
     scoreCounter = 0;
     shuffle();
     box.style.display = "none";
-    myInterval();
+    startTimer();
 }
 
 function pad(val) {
     return val > 9 ? val : "0" + val;
 };
 
-var myInterval = setInterval(function () {
-    second = (pad(++sec % 60));
-    minutes = (pad(parseInt(sec / 60, 10)));
-    secondLbl.innerHTML = second;
-    minutesLbl.innerHTML = minutes
-}, 1000);
+var myInterval;
+function startTimer() {
+    myInterval = setInterval(function () {
+        second = (pad(++sec % 60));
+        minutes = (pad(parseInt(sec / 60, 10)));
+        secondLbl.innerHTML = second;
+        minutesLbl.innerHTML = minutes
+    }, 1000);
+}
 
 function myStopFunction() {
     sec=0;

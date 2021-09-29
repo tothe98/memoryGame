@@ -1,0 +1,14 @@
+[
+    {
+        "id": "vue",
+        "firstCard": "/vue.png",
+        "secondCard": "/vue.svg",
+        "alt": "Vue programming language"
+    },
+    {
+        "id": "angular",
+        "firstCard": "/angular.png",
+        "secondCard": "/angular.svg",
+        "alt": "Vue programming language"
+    }
+]
