@@ -8,62 +8,75 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="start-interface">
+        <div class="box">
+            <p>Keresd meg és párosítsd a párokat!</p>
+            <button class="startBtn" onclick="start();">Indítás</button>
+        </div>
+    </div>
     <header class="control">
         <p><label>Próbálkozás: </label><label id="tryingCounter">0</label></p>
+        <p><label>Idő: </label><label id="minutes">00</label><label>:</label><label id="second">00</label></p>
         <button class="resetBtn" onclick="reset();">Újrakezdés</button>
     </header>
     <section class="memory-game">
         <div class="memory-card" data-framework="angular">
             <img src="img/angular.svg" alt="Angular" class="front-face">
-            <img src="img/ntszki.png" alt="NTSZKI logó" class="back-face">
+            <img src="img/backFace.png" alt="backFace logó" class="back-face">
         </div>
         <div class="memory-card" data-framework="angular">
             <img src="img/angular.svg" alt="Angular" class="front-face">
-            <img src="img/ntszki.png" alt="NTSZKI logó" class="back-face">
+            <img src="img/backFace.png" alt="backFace logó" class="back-face">
         </div>
         <div class="memory-card" data-framework="vue">
             <img src="img/vue.svg" alt="Vue" class="front-face">
-            <img src="img/ntszki.png" alt="NTSZKI logó" class="back-face">
+            <img src="img/backFace.png" alt="backFace logó" class="back-face">
         </div>
         <div class="memory-card" data-framework="vue">
             <img src="img/vue.svg" alt="Vue" class="front-face">
-            <img src="img/ntszki.png" alt="NTSZKI logó" class="back-face">
+            <img src="img/backFace.png" alt="backFace logó" class="back-face">
         </div>
         <div class="memory-card" data-framework="aurelia">
             <img src="img/aurelia.svg" alt="aurelia" class="front-face">
-            <img src="img/ntszki.png" alt="NTSZKI logó" class="back-face">
+            <img src="img/backFace.png" alt="backFace logó" class="back-face">
         </div>
         <div class="memory-card" data-framework="aurelia">
             <img src="img/aurelia.svg" alt="aurelia" class="front-face">
-            <img src="img/ntszki.png" alt="NTSZKI logó" class="back-face">
+            <img src="img/backFace.png" alt="backFace logó" class="back-face">
         </div>
         <div class="memory-card" data-framework="backbone">
             <img src="img/backbone.svg" alt="backbone" class="front-face">
-            <img src="img/ntszki.png" alt="NTSZKI logó" class="back-face">
+            <img src="img/backFace.png" alt="backFace logó" class="back-face">
         </div>
         <div class="memory-card" data-framework="backbone">
             <img src="img/backbone.svg" alt="backbone" class="front-face">
-            <img src="img/ntszki.png" alt="NTSZKI logó" class="back-face">
+            <img src="img/backFace.png" alt="backFace logó" class="back-face">
         </div>
         <div class="memory-card" data-framework="react">
             <img src="img/react.svg" alt="react" class="front-face">
-            <img src="img/ntszki.png" alt="NTSZKI logó" class="back-face">
+            <img src="img/backFace.png" alt="backFace logó" class="back-face">
         </div>
         <div class="memory-card" data-framework="react">
             <img src="img/react.svg" alt="react" class="front-face">
-            <img src="img/ntszki.png" alt="NTSZKI logó" class="back-face">
+            <img src="img/backFace.png" alt="backFace logó" class="back-face">
         </div>
         <div class="memory-card" data-framework="ember">
             <img src="img/ember.svg" alt="ember" class="front-face">
-            <img src="img/ntszki.png" alt="NTSZKI logó" class="back-face">
+            <img src="img/backFace.png" alt="backFace logó" class="back-face">
         </div>
         <div class="memory-card" data-framework="ember">
             <img src="img/ember.svg" alt="ember" class="front-face">
-            <img src="img/ntszki.png" alt="NTSZKI logó" class="back-face">
+            <img src="img/backFace.png" alt="backFace logó" class="back-face">
         </div>
-        
-
     </section>
+    <div class="end-interface">
+        <div class="box">
+            <p>Gratulálunk sikerült megcsinálni!</p>
+            <p>Probálkozás: <span id="tryingCount">0</span></p>
+            <p>Idő: <span id="time">1 perc, 6 másodperc</span></p>
+            <button class="startBtn" onclick="restart();">Újrakezdés</button>
+        </div>
+    </div>
     <script src="scripts.js"></script>
 </body>
 </html>
