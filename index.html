@@ -16,11 +16,13 @@
     </div>
     <header class="control">
         <p><label>Próbálkozás: </label><label id="tryingCounter">0</label></p>
+        <p><label>Szint: </label><label id="level"></label></p>
         <p><label>Idő: </label><label id="minutes">00</label><label>:</label><label id="second">00</label></p>
+        <button class="resetBtn" onclick="stop();">Megállítás</button>
         <button class="resetBtn" onclick="reset();">Újrakezdés</button>
     </header>
     <section class="memory-game">
-        <div class="memory-card" data-framework="angular">
+        <!--<div class="memory-card" data-framework="angular">
             <img src="img/angular.svg" alt="Angular" class="front-face">
             <img src="img/backFace.png" alt="backFace logó" class="back-face">
         </div>
@@ -67,7 +69,7 @@
         <div class="memory-card" data-framework="ember">
             <img src="img/ember.svg" alt="ember" class="front-face">
             <img src="img/backFace.png" alt="backFace logó" class="back-face">
-        </div>
+        </div>-->
     </section>
     <div class="end-interface">
         <div class="box">
@@ -77,6 +79,7 @@
             <button class="startBtn" onclick="restart();">Újrakezdés</button>
         </div>
     </div>
+    <script src="datas.json"></script>
     <script src="scripts.js"></script>
 </body>
 </html>

@@ -86,6 +86,8 @@ label {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     perspective: 800px;
 }
 
