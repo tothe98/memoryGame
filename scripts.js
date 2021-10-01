@@ -20,6 +20,18 @@ let level = 1;
 
 let state = [];
 
+function justFetch() {
+    fetch("datas.json")
+        .then(response => response.json())
+        .then(datas => {
+            datas.forEach(data => {
+                console.log(data.id);
+            });
+        });
+}
+
+justFetch();
+
 function fetchAndRender() {
     state = JSON.parse(`
     [
