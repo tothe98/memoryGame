@@ -84,5 +84,266 @@
             "alt": "Vue programming language",
             "level": 3
         }
+    ],
+
+    "logisztika": [
+        {
+            "id": "1",
+            "firstCard": "img/logisztika/1.jpg",
+            "secondCard": "Állványrendszer",
+            "alt": "állványrendszer",
+            "level": 1
+        },
+        {
+            "id": "2",
+            "firstCard": "img/logisztika/2.jpg",
+            "secondCard": "Autópálya",
+            "alt": "autópálya",
+            "level": 1
+        },
+        {
+            "id": "3",
+            "firstCard": "img/logisztika/3.jpg",
+            "secondCard": "Béka",
+            "alt": "béka",
+            "level": 2
+        },
+        {
+            "id": "4",
+            "firstCard": "img/logisztika/4.jpg",
+            "secondCard": "Csomagolás",
+            "alt": "csomagolás",
+            "level": 2
+        },
+        {
+            "id": "5",
+            "firstCard": "img/logisztika/5.jpg",
+            "secondCard": "Csővezetékes szállítás",
+            "alt": "csővezetékes szállítás",
+            "level": 2
+        },
+        {
+            "id": "6",
+            "firstCard": "img/logisztika/6.png",
+            "secondCard": "EAN kód",
+            "alt": "EAN kód",
+            "level": 2
+        },
+        {
+            "id": "7",
+            "firstCard": "img/logisztika/7.jpg",
+            "secondCard": "Fuvarlevél",
+            "alt": "fuvarlevél",
+            "level": 3
+        },
+        {
+            "id": "8",
+            "firstCard": "img/logisztika/8.jpg",
+            "secondCard": "Kamion",
+            "alt": "kamion",
+            "level": 3
+        },
+        {
+            "id": "9",
+            "firstCard": "img/logisztika/9.jpg",
+            "secondCard": "Kézikocsi",
+            "alt": "kézikocsi",
+            "level": 3
+        },
+        {
+            "id": "10",
+            "firstCard": "img/logisztika/10.jpg",
+            "secondCard": "Konténer",
+            "alt": "konténer",
+            "level": 3
+        },
+        {
+            "id": "11",
+            "firstCard": "img/logisztika/11.jpg",
+            "secondCard": "Raklap",
+            "alt": "raklap",
+            "level": 3
+        },
+        {
+            "id": "12",
+            "firstCard": "img/logisztika/12.jpg",
+            "secondCard": "Teherhajó",
+            "alt": "teherhajó",
+            "level": 3
+        }
+    ],
+
+    "szerszam": [
+        {
+            "id": "1",
+            "firstCard": "img/szerszamkeszito/1.jpg",
+            "secondCard": "Acélsodrony",
+            "alt": "acélsodrony",
+            "level": 1
+        },
+        {
+            "id": "2",
+            "firstCard": "img/szerszamkeszito/2.jpg",
+            "secondCard": "Állványos furó",
+            "alt": "állványos furó",
+            "level": 1
+        },
+        {
+            "id": "3",
+            "firstCard": "img/szerszamkeszito/3.jpg",
+            "secondCard": "CNC eszterga",
+            "alt": "CNC eszterga",
+            "level": 2
+        },
+        {
+            "id": "4",
+            "firstCard": "img/szerszamkeszito/4.jpg",
+            "secondCard": "CNC marógép",
+            "alt": "CNC marógép",
+            "level": 2
+        },
+        {
+            "id": "5",
+            "firstCard": "img/szerszamkeszito/5.jpg",
+            "secondCard": "Csapágy",
+            "alt": "csapágy",
+            "level": 2
+        },
+        {
+            "id": "6",
+            "firstCard": "img/szerszamkeszito/6.jpg",
+            "secondCard": "Fogaskerék",
+            "alt": "fogaskerék",
+            "level": 2
+        },
+        {
+            "id": "7",
+            "firstCard": "img/szerszamkeszito/7.jpg",
+            "secondCard": "Hegesztés",
+            "alt": "hegesztés",
+            "level": 3
+        },
+        {
+            "id": "8",
+            "firstCard": "img/szerszamkeszito/8.jpg",
+            "secondCard": "Korrózió",
+            "alt": "korrózió",
+            "level": 3
+        },
+        {
+            "id": "9",
+            "firstCard": "img/szerszamkeszito/9.png",
+            "secondCard": "Lapos reszelő",
+            "alt": "lapos reszelő",
+            "level": 3
+        },
+        {
+            "id": "10",
+            "firstCard": "img/szerszamkeszito/10.jpg",
+            "secondCard": "Satu",
+            "alt": "satu",
+            "level": 3
+        },
+        {
+            "id": "11",
+            "firstCard": "img/szerszamkeszito/11.jpg",
+            "secondCard": "Szegecs",
+            "alt": "szegecs",
+            "level": 3
+        },
+        {
+            "id": "12",
+            "firstCard": "img/szerszamkeszito/12.png",
+            "secondCard": "Tolómérő",
+            "alt": "tolómérő",
+            "level": 3
+        }
+    ],
+
+    "elektro": [
+        {
+            "id": "1",
+            "firstCard": "img/elektro/1.jpg",
+            "secondCard": "Blankoló fogó",
+            "alt": "blankoló fogó",
+            "level": 1
+        },
+        {
+            "id": "2",
+            "firstCard": "img/elektro/2.jpg",
+            "secondCard": "Csuklópánt",
+            "alt": "csuklópánt",
+            "level": 1
+        },
+        {
+            "id": "3",
+            "firstCard": "img/elektro/3.jpg",
+            "secondCard": "Ellenállás",
+            "alt": "ellenállás",
+            "level": 2
+        },
+        {
+            "id": "4",
+            "firstCard": "img/elektro/4.jpg",
+            "secondCard": "Forrasztóállomás",
+            "alt": "forrasztóállomás",
+            "level": 2
+        },
+        {
+            "id": "5",
+            "firstCard": "img/elektro/5.jpg",
+            "secondCard": "Forrasztóón",
+            "alt": "forrasztóón",
+            "level": 2
+        },
+        {
+            "id": "6",
+            "firstCard": "img/elektro/6.jpg",
+            "secondCard": "Tekercs",
+            "alt": "tekercs",
+            "level": 2
+        },
+        {
+            "id": "7",
+            "firstCard": "img/elektro/7.jpg",
+            "secondCard": "Kábel",
+            "alt": "kábel",
+            "level": 3
+        },
+        {
+            "id": "8",
+            "firstCard": "img/elektro/8.jpg",
+            "secondCard": "Multiméter",
+            "alt": "multiméter",
+            "level": 3
+        },
+        {
+            "id": "9",
+            "firstCard": "img/elektro/9.jpg",
+            "secondCard": "Labortápegység",
+            "alt": "labortápegység",
+            "level": 3
+        },
+        {
+            "id": "10",
+            "firstCard": "img/elektro/10.jpg",
+            "secondCard": "Digitális mikroszkóp",
+            "alt": "digitális mikroszkóp",
+            "level": 3
+        },
+        {
+            "id": "11",
+            "firstCard": "img/elektro/11.jpg",
+            "secondCard": "Műszerész csipesz",
+            "alt": "műszerész csipesz",
+            "level": 3
+        },
+        {
+            "id": "12",
+            "firstCard": "img/elektro/12.jpg",
+            "secondCard": "Nyomtatott áramkör",
+            "alt": "nyomtatott áramkör",
+            "level": 3
+        }
     ]
 }
