@@ -27,6 +27,12 @@ label {
     font-weight: 500;
 }
 
+.categoryLbl {
+    color: black;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
 .resetBtn {
     cursor: pointer;
     font-size: 20px;

@@ -30,9 +30,31 @@ function justFetch() {
         });
 }
 
-justFetch();
+//justFetch();
 
-function fetchAndRender() {
+function fetchAndRender(category) {
+    $(document).ready(function () {
+        /* $.ajax({
+             url: "data.json",
+             crossDomain: true,
+             dataType: "jsonp",
+             format: "json",
+             success: function( response ) {
+                 console.log( response ); // server response
+             }
+         
+         });*/
+
+        $.getJSON("datas.json", function (datas) {
+            datas.forEach(data => {
+                console.log(data);
+            });
+        }).fail(function () {
+            console.log("An error has occurred.");
+        });
+    });
+
+
     state = JSON.parse(`
     [
         {
@@ -181,7 +203,7 @@ function disableCards() {
     resetBoard();
     if (scoreCounter === SCORE) {
         setTimeout(() => {
-            if(level === MAXLEVEL){
+            if (level === MAXLEVEL) {
                 myStopFunction();
                 document.querySelector('#time').innerHTML = minutes + " perc " + second + " másodperc"
                 document.querySelector('#tryingCount').innerHTML = counter;
@@ -238,6 +260,7 @@ function shuffle() {
 
 function start() {
     const box = document.querySelector(".start-interface");
+    const category = document.getElementById("category").value;
     document.querySelector('#level').innerHTML = level;
     hasFlippedCard = false;
     lockBoard = false;
@@ -248,7 +271,8 @@ function start() {
     box.style.display = "none";
     level = 1;
     firstClick = true;
-    fetchAndRender();
+    //console.log(category);
+    fetchAndRender(category);
 }
 
 function restart() {
@@ -268,7 +292,6 @@ function restart() {
     firstClick = true;
     level = 1;
     fetchAndRender();
-    
     shuffle();
 }
 

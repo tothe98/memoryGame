@@ -1,86 +1,88 @@
-[
-    {
-        "id": "vue",
-        "firstCard": "img/vue.svg",
-        "secondCard": "img/vue.svg",
-        "alt": "Vue programming language",
-        "level":1
-    },
-    {
-        "id": "angular",
-        "firstCard": "img/angular.svg",
-        "secondCard": "img/angular.svg",
-        "alt": "Vue programming language",
-        "level":1
-    },
-    {
-        "id": "ember",
-        "firstCard": "img/ember.svg",
-        "secondCard": "img/ember.svg",
-        "alt": "Vue programming language",
-        "level":2
-    },
-    {
-        "id": "aurelia",
-        "firstCard": "img/aurelia.svg",
-        "secondCard": "img/aurelia.svg",
-        "alt": "Vue programming language",
-        "level":2
-    },
-    {
-        "id": "backbone",
-        "firstCard": "img/backbone.svg",
-        "secondCard": "img/backbone.svg",
-        "alt": "Vue programming language",
-        "level":2
-    },
-    {
-        "id": "angular",
-        "firstCard": "img/angular.svg",
-        "secondCard": "/angular.svg",
-        "alt": "Vue programming language",
-        "level":2
-    },
-    {
-        "id": "angular",
-        "firstCard": "img/angular.svg",
-        "secondCard": "/angular.svg",
-        "alt": "Vue programming language",
-        "level":3
-    },
-    {
-        "id": "angular",
-        "firstCard": "img/angular.svg",
-        "secondCard": "/angular.svg",
-        "alt": "Vue programming language",
-        "level":3
-    },
-    {
-        "id": "angular",
-        "firstCard": "img/angular.svg",
-        "secondCard": "/angular.svg",
-        "alt": "Vue programming language",
-        "level":3
-    },
-    {
-        "id": "angular",
-        "firstCard": "img/angular.svg",
-        "secondCard": "/angular.svg",
-        "alt": "Vue programming language",
-        "level":3
-    },
-    {
-        "id": "angular",
-        "firstCard": "img/angular.svg",
-        "secondCard": "/angular.svg",
-        "alt": "Vue programming language",
-        "level":3
-    },
-    {
-        "id": "angular",
-        "firstCard": "img/angular.svg",
-        "secondCard": "/angular.svg",
-        "alt": "Vue programming language",
-        "level":3
-    }
-]
+{
+    "soft": [
+        {
+            "id": "vue",
+            "firstCard": "img/vue.svg",
+            "secondCard": "img/vue.svg",
+            "alt": "Vue programming language",
+            "level": 1
+        },
+        {
+            "id": "angular",
+            "firstCard": "img/angular.svg",
+            "secondCard": "img/angular.svg",
+            "alt": "Vue programming language",
+            "level": 1
+        },
+        {
+            "id": "ember",
+            "firstCard": "img/ember.svg",
+            "secondCard": "img/ember.svg",
+            "alt": "Vue programming language",
+            "level": 2
+        },
+        {
+            "id": "aurelia",
+            "firstCard": "img/aurelia.svg",
+            "secondCard": "img/aurelia.svg",
+            "alt": "Vue programming language",
+            "level": 2
+        },
+        {
+            "id": "backbone",
+            "firstCard": "img/backbone.svg",
+            "secondCard": "img/backbone.svg",
+            "alt": "Vue programming language",
+            "level": 2
+        },
+        {
+            "id": "angular",
+            "firstCard": "img/angular.svg",
+            "secondCard": "/angular.svg",
+            "alt": "Vue programming language",
+            "level": 2
+        },
+        {
+            "id": "angular",
+            "firstCard": "img/angular.svg",
+            "secondCard": "/angular.svg",
+            "alt": "Vue programming language",
+            "level": 3
+        },
+        {
+            "id": "angular",
+            "firstCard": "img/angular.svg",
+            "secondCard": "/angular.svg",
+            "alt": "Vue programming language",
+            "level": 3
+        },
+        {
+            "id": "angular",
+            "firstCard": "img/angular.svg",
+            "secondCard": "/angular.svg",
+            "alt": "Vue programming language",
+            "level": 3
+        },
+        {
+            "id": "angular",
+            "firstCard": "img/angular.svg",
+            "secondCard": "/angular.svg",
+            "alt": "Vue programming language",
+            "level": 3
+        },
+        {
+            "id": "angular",
+            "firstCard": "img/angular.svg",
+            "secondCard": "/angular.svg",
+            "alt": "Vue programming language",
+            "level": 3
+        },
+        {
+            "id": "angular",
+            "firstCard": "img/angular.svg",
+            "secondCard": "/angular.svg",
+            "alt": "Vue programming language",
+            "level": 3
+        }
+    ]
+}
