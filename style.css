@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap");
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -27,9 +27,15 @@ label {
     font-weight: 500;
 }
 
-p.front-face {
+p.front-face-p {
     color: white;
+    font-size: 20px;
     text-align: center;
+}
+
+img.front-face-img {
+    width: 100%;
+    height: auto;
 }
 
 .categoryLbl {
@@ -56,7 +62,7 @@ p.front-face {
 
 .startBtn:hover {
     border: 2px solid limegreen;
-    transition: .1s;
+    transition: 0.1s;
 }
 
 .start-interface {
@@ -107,23 +113,29 @@ p.front-face {
     position: relative;
     transform: scale(1);
     transform-style: preserve-3d;
-    transition: transform .5s;
+    transition: transform 0.5s;
 }
 
 .memory-card:active {
-    transform: scale(.97);
-    transition: transform .2s;
+    transform: scale(0.97);
+    transition: transform 0.2s;
 }
 
 .memory-card.flip {
     transform: rotateY(180deg);
 }
 
-.front-face, .back-face {
+.front-face,
+.back-face {
     width: 100%;
     height: 100%;
     padding: 20px;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
     border-radius: 10px;
     background-color: #1c7ccc;
     backface-visibility: hidden;

@@ -410,18 +410,24 @@ function fetchAndRender() {
             tmpCounter++;
             html += `
             <div class="memory-card" data-framework="${element.id}">
-                <img src="${element.firstCard}" alt="${element.alt}" class="front-face">
+                <div class="front-face">
+                <img src="${element.firstCard}" alt="${element.alt}" class="front-face-img">
+                </div>
                 <img src="img/backFace.png" alt="backFace logó" class="back-face">
             </div>`;
-            if (element.secondCard.includes(".png") || element.secondCard.includes(".jpg")) {
+            if (element.secondCard.includes(".png") || element.secondCard.includes(".jpg") || element.secondCard.includes(".svg")) {
                 html += `<div class="memory-card" data-framework="${element.id}">
-                <img src="${element.secondCard}" alt="${element.alt}" class="front-face">
+                <div class="front-face">
+                <img src="${element.secondCard}" alt="${element.alt}" class="front-face-img">
+                </div>
                 <img src="img/backFace.png" alt="backFace logó" class="back-face">
             </div>
             `;
             } else {
-                html+=`<div class="memory-card" data-framework="${element.id}">
-                <p class="front-face">${element.secondCard}</p>
+                html += `<div class="memory-card" data-framework="${element.id}">
+                <div class="front-face">
+                <p class="front-face-p">${element.secondCard}</p>
+                </div>
                 <img src="img/backFace.png" alt="backFace logó" class="back-face">
             </div>`
             }
