@@ -21,120 +21,93 @@ let selectedCategory;
 
 let state = [];
 
-function justFetch() {
-    fetch("datas.json")
-        .then(response => response.json())
-        .then(datas => {
-            datas.forEach(data => {
-                console.log(data.id);
-            });
-        });
-}
-
-//justFetch();
-
 function fetchAndRender() {
-
-
-    /*$(document).ready(function () {
-        $.get("datas.json", function (datas) {
-            state[0] = (datas[category]);
-            /*datas[category].forEach(data => {
-                console.log(data);
-            });
-        }).fail(function () {
-            console.log("An error has occurred.");
-        });
-
-
-
-    });*/
 
     state = JSON.parse(`
     {
         "soft": [
             {
-                "id": "vue",
-                "firstCard": "img/vue.svg",
-                "secondCard": "img/vue.svg",
-                "alt": "Vue programming language",
+                "id": "1",
+                "firstCard": "img/soft/1.webp",
+                "secondCard": "Angular",
+                "alt": "angular",
                 "level": 1
             },
             {
-                "id": "angular",
-                "firstCard": "img/angular.svg",
-                "secondCard": "img/angular.svg",
-                "alt": "Vue programming language",
+                "id": "2",
+                "firstCard": "img/soft/2.webp",
+                "secondCard": "React",
+                "alt": "react",
                 "level": 1
             },
             {
-                "id": "ember",
-                "firstCard": "img/ember.svg",
-                "secondCard": "img/ember.svg",
-                "alt": "Vue programming language",
+                "id": "3",
+                "firstCard": "img/soft/3.webp",
+                "secondCard": "Javascript",
+                "alt": "javascript",
                 "level": 2
             },
             {
-                "id": "aurelia",
-                "firstCard": "img/aurelia.svg",
-                "secondCard": "img/aurelia.svg",
-                "alt": "Vue programming language",
+                "id": "4",
+                "firstCard": "img/soft/4.webp",
+                "secondCard": "Integrált fejlesztői környezet",
+                "alt": "IDE",
                 "level": 2
             },
             {
-                "id": "backbone",
-                "firstCard": "img/backbone.svg",
-                "secondCard": "img/backbone.svg",
-                "alt": "Vue programming language",
+                "id": "5",
+                "firstCard": "img/soft/5.webp",
+                "secondCard": "Java",
+                "alt": "java",
                 "level": 2
             },
             {
-                "id": "angular",
-                "firstCard": "img/angular.svg",
-                "secondCard": "/angular.svg",
-                "alt": "Vue programming language",
+                "id": "6",
+                "firstCard": "img/soft/6.webp",
+                "secondCard": "Pyhton",
+                "alt": "python",
                 "level": 2
             },
             {
-                "id": "angular",
-                "firstCard": "img/angular.svg",
-                "secondCard": "/angular.svg",
-                "alt": "Vue programming language",
+                "id": "7",
+                "firstCard": "img/soft/7.webp",
+                "secondCard": "Adatbázis",
+                "alt": "adatbázis",
                 "level": 3
             },
             {
-                "id": "angular",
-                "firstCard": "img/angular.svg",
-                "secondCard": "/angular.svg",
-                "alt": "Vue programming language",
+                "id": "8",
+                "firstCard": "img/soft/8.webp",
+                "secondCard": "Felhőszolgáltás",
+                "alt": "felhőszolgáltatás",
                 "level": 3
             },
             {
-                "id": "angular",
-                "firstCard": "img/angular.svg",
-                "secondCard": "/angular.svg",
-                "alt": "Vue programming language",
+                "id": "9",
+                "firstCard": "img/soft/9.webp",
+                "secondCard": "Keresőmotor",
+                "alt": "keresőmotor",
                 "level": 3
             },
             {
-                "id": "angular",
-                "firstCard": "img/angular.svg",
-                "secondCard": "/angular.svg",
-                "alt": "Vue programming language",
+                "id": "10",
+                "firstCard": "img/soft/10.webp",
+                "secondCard": "Hálózat",
+                "alt": "hálózat",
                 "level": 3
             },
             {
-                "id": "angular",
-                "firstCard": "img/angular.svg",
-                "secondCard": "/angular.svg",
-                "alt": "Vue programming language",
+                "id": "11",
+                "firstCard": "img/soft/11.webp",
+                "secondCard": "Memóriakezelés",
+                "alt": "memóriakezelés",
                 "level": 3
             },
             {
-                "id": "angular",
-                "firstCard": "img/angular.svg",
-                "secondCard": "/angular.svg",
-                "alt": "Vue programming language",
+                "id": "12",
+                "firstCard": "img/soft/12.webp",
+                "secondCard": "Vue",
+                "alt": "vue",
                 "level": 3
             }
         ],
@@ -142,84 +115,84 @@ function fetchAndRender() {
         "logisztika": [
             {
                 "id": "1",
-                "firstCard": "img/logisztika/1.jpg",
+                "firstCard": "img/logisztika/1.webp",
                 "secondCard": "Állványrendszer",
                 "alt": "állványrendszer",
                 "level": 1
             },
             {
                 "id": "2",
-                "firstCard": "img/logisztika/2.jpg",
+                "firstCard": "img/logisztika/2.webp",
                 "secondCard": "Autópálya",
                 "alt": "autópálya",
                 "level": 1
             },
             {
                 "id": "3",
-                "firstCard": "img/logisztika/3.jpg",
+                "firstCard": "img/logisztika/3.webp",
                 "secondCard": "Béka",
                 "alt": "béka",
                 "level": 2
             },
             {
                 "id": "4",
-                "firstCard": "img/logisztika/4.jpg",
+                "firstCard": "img/logisztika/4.webp",
                 "secondCard": "Csomagolás",
                 "alt": "csomagolás",
                 "level": 2
             },
             {
                 "id": "5",
-                "firstCard": "img/logisztika/5.jpg",
+                "firstCard": "img/logisztika/5.webp",
                 "secondCard": "Csővezetékes szállítás",
                 "alt": "csővezetékes szállítás",
                 "level": 2
             },
             {
                 "id": "6",
-                "firstCard": "img/logisztika/6.png",
+                "firstCard": "img/logisztika/6.webp",
                 "secondCard": "EAN kód",
                 "alt": "EAN kód",
                 "level": 2
             },
             {
                 "id": "7",
-                "firstCard": "img/logisztika/7.jpg",
+                "firstCard": "img/logisztika/7.webp",
                 "secondCard": "Fuvarlevél",
                 "alt": "fuvarlevél",
                 "level": 3
             },
             {
                 "id": "8",
-                "firstCard": "img/logisztika/8.jpg",
+                "firstCard": "img/logisztika/8.webp",
                 "secondCard": "Kamion",
                 "alt": "kamion",
                 "level": 3
             },
             {
                 "id": "9",
-                "firstCard": "img/logisztika/9.jpg",
+                "firstCard": "img/logisztika/9.webp",
                 "secondCard": "Kézikocsi",
                 "alt": "kézikocsi",
                 "level": 3
             },
             {
                 "id": "10",
-                "firstCard": "img/logisztika/10.jpg",
+                "firstCard": "img/logisztika/10.webp",
                 "secondCard": "Konténer",
                 "alt": "konténer",
                 "level": 3
             },
             {
                 "id": "11",
-                "firstCard": "img/logisztika/11.jpg",
+                "firstCard": "img/logisztika/11.webp",
                 "secondCard": "Raklap",
                 "alt": "raklap",
                 "level": 3
             },
             {
                 "id": "12",
-                "firstCard": "img/logisztika/12.jpg",
+                "firstCard": "img/logisztika/12.webp",
                 "secondCard": "Teherhajó",
                 "alt": "teherhajó",
                 "level": 3
@@ -229,84 +202,84 @@ function fetchAndRender() {
         "szerszam": [
             {
                 "id": "1",
-                "firstCard": "img/szerszamkeszito/1.jpg",
+                "firstCard": "img/szerszamkeszito/1.webp",
                 "secondCard": "Acélsodrony",
                 "alt": "acélsodrony",
                 "level": 1
             },
             {
                 "id": "2",
-                "firstCard": "img/szerszamkeszito/2.jpg",
-                "secondCard": "Állványos furó",
+                "firstCard": "img/szerszamkeszito/2.webp",
+                "secondCard": "Állványos fúró",
                 "alt": "állványos furó",
                 "level": 1
             },
             {
                 "id": "3",
-                "firstCard": "img/szerszamkeszito/3.jpg",
+                "firstCard": "img/szerszamkeszito/3.webp",
                 "secondCard": "CNC eszterga",
                 "alt": "CNC eszterga",
                 "level": 2
             },
             {
                 "id": "4",
-                "firstCard": "img/szerszamkeszito/4.jpg",
+                "firstCard": "img/szerszamkeszito/4.webp",
                 "secondCard": "CNC marógép",
                 "alt": "CNC marógép",
                 "level": 2
             },
             {
                 "id": "5",
-                "firstCard": "img/szerszamkeszito/5.jpg",
+                "firstCard": "img/szerszamkeszito/5.webp",
                 "secondCard": "Csapágy",
                 "alt": "csapágy",
                 "level": 2
             },
             {
                 "id": "6",
-                "firstCard": "img/szerszamkeszito/6.jpg",
+                "firstCard": "img/szerszamkeszito/6.webp",
                 "secondCard": "Fogaskerék",
                 "alt": "fogaskerék",
                 "level": 2
             },
             {
                 "id": "7",
-                "firstCard": "img/szerszamkeszito/7.jpg",
+                "firstCard": "img/szerszamkeszito/7.webp",
                 "secondCard": "Hegesztés",
                 "alt": "hegesztés",
                 "level": 3
             },
             {
                 "id": "8",
-                "firstCard": "img/szerszamkeszito/8.jpg",
+                "firstCard": "img/szerszamkeszito/8.webp",
                 "secondCard": "Korrózió",
                 "alt": "korrózió",
                 "level": 3
             },
             {
                 "id": "9",
-                "firstCard": "img/szerszamkeszito/9.png",
+                "firstCard": "img/szerszamkeszito/9.webp",
                 "secondCard": "Lapos reszelő",
                 "alt": "lapos reszelő",
                 "level": 3
             },
             {
                 "id": "10",
-                "firstCard": "img/szerszamkeszito/10.jpg",
+                "firstCard": "img/szerszamkeszito/10.webp",
                 "secondCard": "Satu",
                 "alt": "satu",
                 "level": 3
             },
             {
                 "id": "11",
-                "firstCard": "img/szerszamkeszito/11.jpg",
+                "firstCard": "img/szerszamkeszito/11.webp",
                 "secondCard": "Szegecs",
                 "alt": "szegecs",
                 "level": 3
             },
             {
                 "id": "12",
-                "firstCard": "img/szerszamkeszito/12.png",
+                "firstCard": "img/szerszamkeszito/12.webp",
                 "secondCard": "Tolómérő",
                 "alt": "tolómérő",
                 "level": 3
@@ -316,93 +289,179 @@ function fetchAndRender() {
         "elektro": [
             {
                 "id": "1",
-                "firstCard": "img/elektro/1.jpg",
+                "firstCard": "img/elektro/1.webp",
                 "secondCard": "Blankoló fogó",
                 "alt": "blankoló fogó",
                 "level": 1
             },
             {
                 "id": "2",
-                "firstCard": "img/elektro/2.jpg",
+                "firstCard": "img/elektro/2.webp",
                 "secondCard": "Csuklópánt",
                 "alt": "csuklópánt",
                 "level": 1
             },
             {
                 "id": "3",
-                "firstCard": "img/elektro/3.jpg",
+                "firstCard": "img/elektro/3.webp",
                 "secondCard": "Ellenállás",
                 "alt": "ellenállás",
                 "level": 2
             },
             {
                 "id": "4",
-                "firstCard": "img/elektro/4.jpg",
+                "firstCard": "img/elektro/4.webp",
                 "secondCard": "Forrasztóállomás",
                 "alt": "forrasztóállomás",
                 "level": 2
             },
             {
                 "id": "5",
-                "firstCard": "img/elektro/5.jpg",
+                "firstCard": "img/elektro/5.webp",
                 "secondCard": "Forrasztóón",
                 "alt": "forrasztóón",
                 "level": 2
             },
             {
                 "id": "6",
-                "firstCard": "img/elektro/6.jpg",
+                "firstCard": "img/elektro/6.webp",
                 "secondCard": "Tekercs",
                 "alt": "tekercs",
                 "level": 2
             },
             {
                 "id": "7",
-                "firstCard": "img/elektro/7.jpg",
+                "firstCard": "img/elektro/7.webp",
                 "secondCard": "Kábel",
                 "alt": "kábel",
                 "level": 3
             },
             {
                 "id": "8",
-                "firstCard": "img/elektro/8.jpg",
+                "firstCard": "img/elektro/8.webp",
                 "secondCard": "Multiméter",
                 "alt": "multiméter",
                 "level": 3
             },
             {
                 "id": "9",
-                "firstCard": "img/elektro/9.jpg",
+                "firstCard": "img/elektro/9.webp",
                 "secondCard": "Labortápegység",
                 "alt": "labortápegység",
                 "level": 3
             },
             {
                 "id": "10",
-                "firstCard": "img/elektro/10.jpg",
+                "firstCard": "img/elektro/10.webp",
                 "secondCard": "Digitális mikroszkóp",
                 "alt": "digitális mikroszkóp",
                 "level": 3
             },
             {
                 "id": "11",
-                "firstCard": "img/elektro/11.jpg",
+                "firstCard": "img/elektro/11.webp",
                 "secondCard": "Műszerész csipesz",
                 "alt": "műszerész csipesz",
                 "level": 3
             },
             {
                 "id": "12",
-                "firstCard": "img/elektro/12.jpg",
+                "firstCard": "img/elektro/12.webp",
                 "secondCard": "Nyomtatott áramkör",
                 "alt": "nyomtatott áramkör",
+                "level": 3
+            }
+        ],
+    
+        "penz": [
+            {
+                "id": "1",
+                "firstCard": "img/penz/1.webp",
+                "secondCard": "ÁFA kulcsok",
+                "alt": "ÁFA kulcsok",
+                "level": 1
+            },
+            {
+                "id": "2",
+                "firstCard": "img/penz/2.webp",
+                "secondCard": "Árfolyam",
+                "alt": "árfolyam",
+                "level": 1
+            },
+            {
+                "id": "3",
+                "firstCard": "img/penz/3.webp",
+                "secondCard": "Bankautomata",
+                "alt": "bankautomata",
+                "level": 2
+            },
+            {
+                "id": "4",
+                "firstCard": "img/penz/4.webp",
+                "secondCard": "Bankjegy",
+                "alt": "bankjegy",
+                "level": 2
+            },
+            {
+                "id": "5",
+                "firstCard": "img/penz/5.webp",
+                "secondCard": "Bankkártya",
+                "alt": "bankkártya",
+                "level": 2
+            },
+            {
+                "id": "6",
+                "firstCard": "img/penz/6.webp",
+                "secondCard": "Bitcoin",
+                "alt": "bitcoin",
+                "level": 2
+            },
+            {
+                "id": "7",
+                "firstCard": "img/penz/7.webp",
+                "secondCard": "Könyvelő program",
+                "alt": "könyvelő program",
+                "level": 3
+            },
+            {
+                "id": "8",
+                "firstCard": "img/penz/8.webp",
+                "secondCard": "Központi bank",
+                "alt": "központi bank",
+                "level": 3
+            },
+            {
+                "id": "9",
+                "firstCard": "img/penz/9.webp",
+                "secondCard": "Pénzvizsgáló",
+                "alt": "pénzvizsgáló",
+                "level": 3
+            },
+            {
+                "id": "10",
+                "firstCard": "img/penz/10.webp",
+                "secondCard": "Megtakarítás",
+                "alt": "megtakarítás",
+                "level": 3
+            },
+            {
+                "id": "11",
+                "firstCard": "img/penz/11.webp",
+                "secondCard": "Mérleg",
+                "alt": "mérleg",
+                "level": 3
+            },
+            {
+                "id": "12",
+                "firstCard": "img/penz/12.webp",
+                "secondCard": "Kamatláb",
+                "alt": "kamatláb",
                 "level": 3
             }
         ]
     }
     
     `);
-    //console.log(state);
     let html = "";
     let tmpCounter = 0;
     state[selectedCategory].forEach(element => {
@@ -498,7 +557,7 @@ function unflipCards() {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
         resetBoard();
-    }, 1000); //1,0 sec
+    }, 2000); //2,0 sec
 }
 
 function resetBoard() {
@@ -549,28 +608,14 @@ function start() {
             selectedCategory = categories[i].value;
         }
     }
-    //alert(category)
     fetchAndRender();
 }
 
 function restart() {
     const box = document.querySelector(".end-interface");
-    cards.forEach(card => {
-        card.classList.remove('flip');
-        card.addEventListener('click', flipCard)
-    });
-    hasFlippedCard = false;
-    lockBoard = false;
-    firstCard = null;
-    secondCard = null;
-    counter = 0;
-    counterElement.innerHTML = counter;
-    scoreCounter = 0;
+    const startBox = document.querySelector(".start-interface");
     box.style.display = "none";
-    firstClick = true;
-    level = 1;
-    fetchAndRender();
-    shuffle();
+    startBox.style.display = "flex";
 }
 
 function stop() {

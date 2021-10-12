@@ -13,12 +13,16 @@ body {
     background-color: #20376b;
 }
 
+p {
+    font-size: 25px;
+}
+
 .control {
     width: 1000px;
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 label {
@@ -40,7 +44,7 @@ img.front-face-img {
 
 .categoryLbl {
     color: black;
-    font-size: 16px;
+    font-size: 25px;
     margin-left: 10px;
 }
 
@@ -99,6 +103,8 @@ img.front-face-img {
     width: 800px;
     height: 800px;
     margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
