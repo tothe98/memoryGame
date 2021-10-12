@@ -474,7 +474,7 @@ function fetchAndRender() {
                 </div>
                 <img src="img/backFace.png" alt="backFace logó" class="back-face">
             </div>`;
-            if (element.secondCard.includes(".png") || element.secondCard.includes(".jpg") || element.secondCard.includes(".svg")) {
+            if (element.secondCard.includes(".webp")) {
                 html += `<div class="memory-card" data-framework="${element.id}">
                 <div class="front-face">
                 <img src="${element.secondCard}" alt="${element.alt}" class="front-face-img">
