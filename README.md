@@ -9,3 +9,5 @@ Static memory game for my [school](https://ntszki.hu)'s open day in 2021, where 
 - Logistics
 - Tool and device manufacturer
 - Electronic technician
+
+``` The pictures aren't my own property! ```
